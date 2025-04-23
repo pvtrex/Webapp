@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+
+
+}
+
+body {
+    background-color: black;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.main {
+    background-image: url("asserts/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1300px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    opacity: 0.69;
+
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    height: 62px;
+
+}
+
+nav img {
+    color: red;
+    width: 115px;
+    position: relative;
+    z-index: 10;
+    top: 5px;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 62px);
+    position: relative;
+    color: white;
+    padding: 0 30px;
+    gap: 23px;
+
+
+}
+
+
+.hero>:first-child {
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+
+    font-size: 45px;
+    text-align: center;
+
+
+}
+
+.hero span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.hero :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+.separation {
+    background-color: rgb(46, 42, 42);
+    height: 5px;
+}
+
+.btn {
+    padding: 3px 20px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(221, 217, 217, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 11.5px;
+    cursor: pointer;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+}
+
+.btn-red {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    font-weight: 300;
+    font-size: 12.5px;
+    padding: 3px 7px;
+}
+
+
+.btn-red-sm {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 0.9;
+}
+
+.main input {
+    font-family: "Poppins", sans-serif;
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.secimg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+   
+    position: absolute;
+    width: 22vw;
+    right: 60px;
+    top: 119px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+.third .secImg video{
+    position: absolute;
+    width: 25vw;
+    right: 60px;
+    top: 100px;
+}
+.secImg video {
+    position: absolute;
+    width: 22vw;
+    right: 60px;
+    top: 120px;
+}
+    .faq h2 {
+        text-align: center;
+        font-size: 48px;
+    }
+    
+    .faq {
+        background: black;
+        color: white;
+        padding: 34px;
+    }
+    
+    .faqbox:hover {
+        background-color: #414141;
+        color: white;
+    }
+    
+    .faqbox svg {
+        filter: invert(1);
+    }
+    
+    .faqbox {
+        transition: all 1s ease-out;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #2d2d2d;
+        padding: 24px;
+        max-width: 60vw;
+        margin: 34px auto;
+        cursor: pointer;
+    }
+    
+    footer {
+        color: white;
+        max-width: 60vw;
+        margin: auto;
+        padding: 60px;
+    }
+    
+    footer .questions {
+        padding: 34px 0;
+    }
+    
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: white;
+    }
+    
+    
+    
