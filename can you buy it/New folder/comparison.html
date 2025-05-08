@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Canyoubuyit.com</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
+    
+    
+
+    .input-group, .result-table {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .item-entry {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 60px;
+      gap: 10px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .buttoncal {
+      margin-top: 10px;
+      padding: 10px;
+      background: #f1db25;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 15px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .highlight {
+      background: #EEEEFF;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- navigation panal -->
+ <nav>
+  <div class="navbar">
+    <div class="left">
+      <div class="left-div1"></div>
+      <div class="left-div2"></div>
+    </div>
+    <div class="center">
+      <ul>
+        <a href="/New folder/index.html">
+          <li>Home</li>
+        </a>
+       
+        <a href="/service.html">
+          <li>Services</li>
+        </a>
+        <a href="/blog/index.html">
+          <li>Blog</li>
+        </a>
+        <a href="/contact us/contact.html">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+   
+    <div class="right">
+      <div><a href="/login-page/login-page.html">Sign in</a></div>
+    </div>
+  </div>
+</nav>
+<!-- navigation panal ends here -->
+ <!-- CTA Section -->
+ <section class="section cta ">
+  <h1 class="section cta animate__animated  animate__fadeIn " >Canyoubuyit.com has the potential to provide users with a range of valuable features and services</h1>
+  <p style="color: gray; font-size: 1.2rem; margin: 1rem 0">Core Financial Tools</p>
+  <div class="buttons">
+    <button class="btnft btn-black">↓ Core Financial Tools</button>
+    <a href="calculator.html"><button class="btnft">↓ COST CACULATOR 
+    </button></a>
+    <a href="comparison.html"> <button class="btnft">↓ BUDGET IMPACT ANALYSIS 
+    </button></a>
+   
+    <a href="https://canyoubuyit-dashboard.netlify.app/" ><button class="btn ">↓ DASHBOARD OVERVIEW</button></a>
+  </div>
+</section>
+<div class="input-group animate__animated  animate__fadeInUp">
+  <label for="monthlyIncome">Your Monthly Income (₹):</label>
+  <input type="number" id="monthlyIncome" placeholder="e.g. 50000">
+  <div id="itemsList"></div>
+  <button class="buttoncal" onclick="addItem()">➕ Add Item</button>
+  <button class="buttoncal" onclick="compareItems()">🔍 Compare</button>
+</div>
+
+<div class="result-table" id="comparisonResults" style="display: none;">
+  <h3>📊 Comparison Results</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Cost (₹)</th>
+        <th>Months</th>
+        <th>Monthly</th>
+        <th>Impact (%)</th>
+      </tr>
+    </thead>
+    <tbody id="resultsTableBody"></tbody>
+  </table>
+</div>
+
+
+
+<!-- Color Labels -->
+<section class="section">
+  <h2>FAQs</h2>
+  <div class="colors">
+    
+    <div class="color-box black-box  " >What is financial budgeting?
+        <a href="/blog/FAQs/FAQs1.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" style="filter: invert(1);" alt="" srcset=""></a>
+    
+    </div>
+    <div class="color-box white-box">How to create an effective budget?
+       <a href="/blog/FAQs/FAQs2.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" alt="" srcset=""></a>
+    </div>
+
+    <div class="color-box white-box">Benefits of financial budgeting?
+      <a href="/blog/FAQs/FAQs3.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" alt="" srcset=""></a>
+    </div>
+
+    <div class="color-box black-box" style="    width: 300px;">Tips for successful financial budgeting?
+      <a href="/blog/FAQs/FAQs4.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" style=" filter: invert(1);" alt="" srcset=""></a>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div style="background: #333; padding: 0.5rem 1rem; border-radius: 8px;"><a href="/index.html" style="color: white;"> Canyoubuyit.com</a></div>
+  <p>© 2025 All rights reserved</p>
+  <nav style="    padding: 0 1rem;">
+    <a href="/about.html" style="color: white; text-decoration: none;">About</a>
+    <a href="/service.html" style="color: white; text-decoration: none;">Service</a>
+    <a href="/Categories.html" style="color: white; text-decoration: none;">Categories</a>
+    <a href="/New folder/index.html" style="color: white; text-decoration: none;">Home</a>
+  </nav>
+</footer>
+
+<script>
+  let itemCount = 0;
+
+  window.onload = () => {
+    const saved = localStorage.getItem("monthlyIncome");
+    if (saved) document.getElementById("monthlyIncome").value = saved;
+  };
+
+  function addItem() {
+    const list = document.getElementById("itemsList");
+    const div = document.createElement("div");
+    div.className = "item-entry";
+    div.innerHTML = `
+      <input type="text" placeholder="Item Name" id="itemName-${itemCount}">
+      <input type="number" placeholder="Total Cost" id="itemCost-${itemCount}">
+      <input type="number" placeholder="Months" id="itemMonths-${itemCount}">
+      <button onclick="this.parentElement.remove()">❌</button>
+    `;
+    list.appendChild(div);
+    itemCount++;
+  }
+
+  function compareItems() {
+    const income = parseFloat(document.getElementById("monthlyIncome").value);
+    if (!income || income <= 0) return alert("Enter a valid monthly income.");
+
+    localStorage.setItem("monthlyIncome", income); // Save for reuse
+
+    const table = document.getElementById("resultsTableBody");
+    table.innerHTML = "";
+
+    const entries = document.querySelectorAll(".item-entry");
+    const data = [];
+
+    entries.forEach((row, i) => {
+      const name = row.querySelector(`#itemName-${i}`)?.value;
+      const cost = parseFloat(row.querySelector(`#itemCost-${i}`)?.value);
+      const months = parseInt(row.querySelector(`#itemMonths-${i}`)?.value);
+
+      if (!name || !cost || !months || months <= 0) return;
+
+      const monthly = cost / months;
+      const impact = (monthly / income) * 100;
+
+      data.push({ name, cost, months, monthly, impact });
+    });
+
+    const best = data.reduce((min, curr) => curr.impact < min.impact ? curr : min, data[0]);
+
+    data.forEach(item => {
+      const row = document.createElement("tr");
+      if (item === best) row.classList.add("highlight");
+      row.innerHTML = `
+        <td>${item.name}</td>
+        <td>₹${item.cost}</td>
+        <td>${item.months}</td>
+        <td>₹${item.monthly.toFixed(2)}</td>
+        <td>${item.impact.toFixed(2)}%</td>
+      `;
+      table.appendChild(row);
+    });
+
+    document.getElementById("comparisonResults").style.display = "block";
+  }
+</script>
+
+</body>
+</html>

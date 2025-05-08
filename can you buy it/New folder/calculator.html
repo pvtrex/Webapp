@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Canyoubuyit.com</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f8; padding: 0; margin: 0; }
+   
+
+    .calculator {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .buttoncal {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background: #f1db25;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .results {
+      background: #eef;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    canvas {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- navigation panal -->
+ <nav>
+  <div class="navbar">
+    <div class="left">
+      <div class="left-div1"></div>
+      <div class="left-div2"></div>
+    </div>
+    <div class="center">
+      <ul>
+        <a href="/New folder/index.html">
+          <li>Home</li>
+        </a>
+        <a href="/service.html">
+          <li>Services</li>
+        </a>
+        <a href="/blog/index.html">
+          <li>Blog</li>
+        </a>
+        <a href="/contact us/contact.html">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+   
+    <div class="right">
+      <div><a href="/login-page/login-page.html">Sign in</a></div>
+    </div>
+  </div>
+</nav>
+<!-- navigation panal ends here -->
+ <!-- CTA Section -->
+ <section class="section cta ">
+  <h1 class="section cta animate__animated  animate__fadeIn " >Canyoubuyit.com has the potential to provide users with a range of valuable features and services</h1>
+  <p style="color: gray; font-size: 1.2rem; margin: 1rem 0">Core Financial Tools</p>
+  <div class="buttons">
+    <button class="btnft btn-black">↓ Core Financial Tools</button>
+    <a href="calculator.html"><button class="btnft">↓ COST CACULATOR 
+    </button></a>
+    <a href="comparison.html"> <button class="btnft">↓ BUDGET IMPACT ANALYSIS 
+    </button></a>
+   
+    <a href="https://canyoubuyit-dashboard.netlify.app/" ><button class="btn ">↓ DASHBOARD OVERVIEW</button></a>
+  </div>
+</section>
+
+<div class="calculator animate__animated  animate__fadeInUp">
+  <h2>Cost Calculator</h2>
+  <input type="number" id="monthlyIncome" placeholder="Monthly Income (₹)">
+  <input type="number" id="itemCost" placeholder="Item Cost (₹)">
+  <input type="number" id="months" placeholder="Repayment Duration (months)">
+  <button class="buttoncal" onclick="calculateImpact()">Calculate</button>
+  <button class="buttoncal" onclick="goToComparison()">Compare Items</button>
+
+  <div class="results" id="results"></div>
+
+  <canvas id="pieChart"></canvas>
+  <canvas id="barChart"></canvas>
+</div>
+
+
+
+
+<!-- Color Labels -->
+<section class="section">
+  <h2>FAQs</h2>
+  <div class="colors">
+    
+    <div class="color-box black-box  " >What is financial budgeting?
+        <a href="/blog/FAQs/FAQs1.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" style="filter: invert(1);" alt="" srcset=""></a>
+    
+    </div>
+    <div class="color-box white-box">How to create an effective budget?
+       <a href="/blog/FAQs/FAQs2.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" alt="" srcset=""></a>
+    </div>
+
+    <div class="color-box white-box">Benefits of financial budgeting?
+      <a href="/blog/FAQs/FAQs3.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" alt="" srcset=""></a>
+    </div>
+
+    <div class="color-box black-box" style="    width: 300px;">Tips for successful financial budgeting?
+      <a href="/blog/FAQs/FAQs4.html"><img src="https://cdn-icons-png.flaticon.com/512/10255/10255687.png" style=" filter: invert(1);" alt="" srcset=""></a>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div style="background: #333; padding: 0.5rem 1rem; border-radius: 8px;"><a href="/index.html" style="color: white;"> Canyoubuyit.com</a></div>
+  <p>© 2025 All rights reserved</p>
+  <nav style="    padding: 0 1rem;">
+    <a href="/about.html" style="color: white; text-decoration: none;">About</a>
+    <a href="/service.html" style="color: white; text-decoration: none;">Service</a>
+    <a href="/Categories.html" style="color: white; text-decoration: none;">Categories</a>
+    <a href="/New folder/index.html" style="color: white; text-decoration: none;">Home</a>
+  </nav>
+</footer>
+
+
+<script>
+  let pieChart, barChart;
+
+  function calculateImpact() {
+    const income = parseFloat(document.getElementById('monthlyIncome').value);
+    const cost = parseFloat(document.getElementById('itemCost').value);
+    const months = parseInt(document.getElementById('months').value);
+
+    if (!income || !cost || !months || months <= 0) {
+      document.getElementById('results').innerHTML = "<p>Please enter valid details.</p>";
+      return;
+    }
+
+    localStorage.setItem("monthlyIncome", income); // Store income for other pages
+
+    const monthlyInstallment = cost / months;
+    const percentImpact = (monthlyInstallment / income) * 100;
+    const yearlyImpact = monthlyInstallment * 12;
+
+    document.getElementById('results').innerHTML = `
+      <strong>Monthly Installment:</strong> ₹${monthlyInstallment.toFixed(2)}<br>
+      <strong>Impact on Monthly Budget:</strong> ${percentImpact.toFixed(2)}%<br>
+      <strong>Yearly Spend:</strong> ₹${yearlyImpact.toFixed(2)}
+    `;
+
+    if (pieChart) pieChart.destroy();
+    pieChart = new Chart(document.getElementById('pieChart'), {
+      type: 'pie',
+      data: {
+        labels: ['Remaining Budget', 'Installment'],
+        datasets: [{
+          data: [income - monthlyInstallment, monthlyInstallment],
+          backgroundColor: ['#4caf50', '#f44336']
+        }]
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: 'Monthly Budget Breakdown'
+          }
+        }
+      }
+    });
+
+    if (barChart) barChart.destroy();
+    barChart = new Chart(document.getElementById('barChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Income', 'Installment'],
+        datasets: [{
+          label: '₹',
+          data: [income, monthlyInstallment],
+          backgroundColor: ['#2196f3', '#ff9800']
+        }]
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: 'Income vs Installment'
+          }
+        },
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+  }
+
+  function goToComparison() {
+    window.location.href = "comparison.html";
+  }
+  
+</script>
+
+</body>
+</html>

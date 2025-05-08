@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth
+}
+
+
+.signup-page {
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 900px;
+  width: 100%;
+}
+
+.signup-background {
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1.01);
+  /* Prevents potential white edges */
+}
+
+.signup-overlay {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 132px 70px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-content {
+  width: 940px;
+  max-width: 100%;
+}
+
+.signup-layout {
+  gap: 20px;
+  display: flex;
+}
+
+.brand-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  line-height: normal;
+  width: 45%;
+}
+
+.brand-content {
+  margin-top: 0px;
+  font-family:
+    "Zen Kaku Gothic Antique",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  color: #ffffff;
+  /* Add or modify properties here if needed */
+}
+
+.brand-logo {
+  aspect-ratio: 4.27;
+  object-fit: contain;
+  object-position: center;
+  width: 274px;
+  max-width: 100%;
+}
+
+.hero-content {
+  margin-top: 85px;
+  max-width: 380px;
+  /* Add or modify properties here if needed */
+}
+
+.hero-title {
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 24px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  line-height: normal;
+  width: 45%;
+  position: relative;
+
+  margin-left: 20px;
+}
+
+.form-container {
+  border-radius: 16px 16px 0 0; /* Adjusted for a smaller, rounded look */
+  background-color: #fafafa;
+  display: flex;
+  flex-grow: 1;
+  padding: 29px 20px; /* Reduced padding for a smaller container */
+  flex-direction: column;
+  align-items: center;
+  font-family:
+    "Zen Kaku Gothic Antique",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  width: 80%; /* Reduced width for a smaller container */
+  max-width: 320px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+.form-content {
+  align-self: stretch;
+  display: flex;
+  padding: 0 15px; /* Reduced padding for smaller spacing */
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-header {
+  align-self: start;
+  color: #000000;
+  font-weight: 400;
+}
+
+.form-subtitle {
+  font-size: 13px;
+  line-height: 23px;
+  margin: 0;
+}
+
+.form-title {
+  font-size: 25px;
+  line-height: 44px;
+  margin: 0;
+}
+
+.signup-form {
+  margin-top: 4px;
+}
+
+.form-fields {
+  width: 100%;
+  max-width: 280px; /* Adjusted for smaller fields */
+  padding-top: 8px; /* Reduced padding */
+  color: #757575;
+  font-weight: 400;
+}
+
+.form-field {
+  border-radius: 6px; /* Slightly smaller border radius */
+  border: 1px solid #bdbdbd;
+  display: flex;
+  padding: 0 8px 10px; /* Reduced padding */
+  flex-direction: column;
+  align-items: start;
+  margin-top: 12px; /* Reduced margin */
+}
+
+.form-field:first-child {
+  margin-top: 0;
+}
+
+.field-label {
+  background-color: #fafafa;
+  z-index: 10;
+  margin-top: -11px;
+  padding: 0 10px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 23px;
+}
+
+.field-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  transition: all 0.3s ease;
+  height: 25px; /* Adjusted height for input fields */
+}
+
+.form-field {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.form-field:hover {
+  border-color: #424242;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-field:focus-within {
+  border-color: #212121;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+  border-radius: 6px; /* Adjusted for smaller buttons */
+  background-color: #212121;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px; /* Corrected from '.' to ';' */
+  line-height: 1.8;
+  width: 100%;
+  max-width: 280px; /* Adjusted for smaller buttons */
+  padding: 12px; /* Reduced padding */
+  margin-top: 12px; /* Reduced margin */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #424242;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  text-align: center;
+  margin: 18px 0;
+  position: relative;
+}
+
+.divider-text {
+  background-color: #fafafa;
+  padding: 0 17px;
+  font-size: 13px;
+  color: #212121;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.social-login {
+  width: 380px;
+  max-width: 100%;
+  font-size: 13px;
+  color: #616161;
+}
+
+.social-button {
+  border-radius: 6px;
+  background-color: #fafafa;
+  border: 1px solid #eeeeee;
+  width: 100%;
+  max-width: 280px; /* Adjusted for smaller buttons */
+  padding: 12px; /* Corrected from '.' to ';' */
+  font-size: 12px; /* Corrected from '.' to ';' */
+  margin-top: 8px; /* Reduced margin */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #f5f5f5;
+  border-color: #e0e0e0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.social-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.social-button:first-child {
+  margin-top: 0;
+}
+
+.login-link {
+  color: #212121;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-text {
+  font-weight: 700;
+  text-decoration: underline;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.login-text:hover {
+  color: #424242;
+  transform: translateY(-1px);
+}
+
+.login-text:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+  .signup-container {
+    max-width: 100%;
+  }
+
+  .signup-overlay {
+    padding: 100px 20px;
+  }
+
+  .signup-layout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  /* .brand-section {
+      width: 100%;
+    }
+   */
+  .brand-content {
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  .hero-content {
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+
+
+  /* .form-section {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 40px;
+    } */
+  .brand-section,
+  .form-section {
+    width: 82vw;
+    margin: 0 0;
+  }
+
+  .form-content {
+    padding: 0 20px;
+  }
+
+  .submit-button,
+  .social-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .signup-overlay {
+    padding: 0px 0px;
+  }
+
+  .brand-content {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    margin-top: 30px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+  .form-container {
+    padding: 16px;
+    margin-left: 10px;
+    border-radius: 12px;
+
+  }
+
+  .form-content {
+    padding: 0 16px;
+  }
+
+  .form-subtitle {
+    font-size: 12px;
+    padding: 12px;
+    /* Added as per your request */
+    line-height: 20px; /* Corrected from '.' to ';' */
+  }
+
+  .form-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .form-fields {
+    width: 100%;
+  }
+
+  .form-field {
+    padding: 0 8px 12px;
+  }
+
+  .field-label {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+
+  .field-input {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 12px; /* Corrected from '.' to ';' */
+  }
+
+  .divider {
+    margin: 14px 0;
+  }
+
+  .divider-text {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  .social-login {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .social-button {
+    padding: 12px;
+    font-size: 12px; /* Corrected from '.' to ';' */
+    margin-top: 8px;
+  }
+
+  .login-link {
+    margin-top: 30px;
+    font-size: 12px; /* Corrected from '.' to ';' */
+  }
+}
+
+/* General styles for PC (default) */
+body {
+  font-size: 16px;
+  /* Default font size for PC */
+}
+
+/* Responsive styles for iPhone 16 Pro Max (screen width: 1290px) */
+@media (max-width: 1290px) {
+  .signup-container {
+    padding: 20px;
+  }
+
+  .form-container {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .form-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .form-fields {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .social-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .login-link {
+    font-size: 14px;
+  }
+}
+
+/* Responsive styles for Samsung Galaxy S24 Ultra (screen width: 1440px) */
+@media (max-width: 1440px) {
+  .signup-container {
+    padding: 30px;
+  }
+
+  .form-container {
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .form-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .form-fields {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 18px;
+    font-size: 15px;
+  }
+
+  .social-button {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .login-link {
+    font-size: 15px;
+  }
+}
+
+/* Additional adjustments for smaller screens (mobile-first approach) */
+@media (max-width: 991px) {
+  .signup-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .brand-section,
+  .form-section {
+    width: 80vw;
+    /* Added as per your request */
+  }
+
+  .form-content {
+    padding: 0 20px;
+  }
+
+  .submit-button,
+  .social-button {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 16px;
+  }
+
+  .form-container {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .form-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .form-fields {
+    width: 100%;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 12px; /* Corrected from '.' to ';' */
+  }
+
+  .social-button {
+    padding: 12px;
+    font-size: 12px; /* Corrected from '.' to ';' */
+  }
+
+  .login-link {
+    font-size: 12px; /* Corrected from '.' to ';' */
+  }
+
+  .form-subtitle {
+    font-size: 12px;
+    padding: 12px;
+    /* Added as per your request */
+    line-height: 20px; /* Corrected from '.' to ';' */
+  }
+}
