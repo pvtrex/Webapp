@@ -24,7 +24,7 @@ const Header: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-dark-100 shadow-lg' : 'bg-transparent'
       }`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 bg-[#111827ab] py-4">
         <div className="flex items-center justify-between">
           <a
             href="https://canyoubuyit.netlify.app/"
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
 
 
 
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center  space-x-6">
             {navLinks.map((link) => (
               <NavLink
                 key={link.path}
@@ -47,17 +47,7 @@ const Header: React.FC = () => {
               />
             ))}
 
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full hover:bg-gray-700 transition-colors"
-            >
-              {isDarkMode ? (
-                <SunIcon className="h-5 w-5 text-yellow-400" />
-              ) : (
-                <MoonIcon className="h-5 w-5 text-gray-400" />
-              )}
-            </button>
-          </nav>
+                    </nav>
 
           <button
             className="md:hidden text-white"
@@ -73,7 +63,7 @@ const Header: React.FC = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 bg-dark-100 rounded-lg p-4">
+          <nav className="md:hidden mt-4 bg-dark-100 bg-[#111827ab] rounded-lg p-4">
             {navLinks.map((link) => (
               <MobileNavLink
                 key={link.path}
