@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Vedant Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+  <!-- Add these links in your HTML head section -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  <!-- Favicon link -->
+  <!-- <link rel="icon" type="image/png" href="imgs/logo.png.png"> -->
+  <link rel="icon" type="image/png" href="imgs/download.png">
+
+
+</head>
+
+<body style="background-color: #FFFFFF;">
+  <!-- Black header for mobile and tablet views -->
+
+  <header class="black-header">
+    <div class="black-header-content">
+      <div class="logo">
+        <img src="imgs/download.png" style="filter: 
+        invert(1);" alt="Vedant Store">
+      </div>
+   
+
+      <div class="search-bar">
+        <form action="buddy.html" method="get" class="search-form">
+          <input type="hidden" name="post_type" value="product" />
+          <div class="search-bar">
+            <input type="text" name="s" id="searchInputMob" class="slide-search" placeholder="Search Products" />
+            <i class="fa fa-search search-icon"></i>
+          </div>
+          <div class="clearInput">
+            <i class="fa fa-times close-icon"></i>
+          </div>
+        </form>
+      </div>
+      <a href="index.html#" style="color: #000;" class="toggle-icon" id="toggleMenu"><i class="fa fa-bars"></i></a>
+
+      <!-- Mobile Menu Navigation -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html#" class="close-icon" id="closeMenu" style="color: red;"><i class="fa fa-times"></i></a>
+        <ul>
+          <li><a href="buddy/product-category/ipad/index.html">iPad</a></li>
+          <li><a href="buddy/product-category/iphone/index.html">iPhone</a></li>
+          <li><a href="buddy/product-category/applewatch/index.html">Apple Watch</a></li>
+          <li><a href="buddy/product-category/airpods/index.html">Airpods</a></li>
+          <li><a href="buddy/product-category/macbook/index.html">MacBook</a></li>
+          <li><a href="buddy/store/index.html">Shop</a></li>
+          <li><a href="buddy/product-category/accessories/page/1/index.html">DSLR Cameras</a></li>
+          <li><a href="buddy/product-category/accessories/page/1/index.html">Accessories</a></li>
+          <li><a href="buddy/index.html@p=41">My Account</a></li>
+          <li><a href="buddy/index.html@p=43">About Us</a></li>
+          <li><a href="buddy/index.html@p=414">Contact Us</a></li>
+          <li><a href="checkwarranty/index.html">Check Warranty</a></li>
+          <div class="social-icons">
+            <div><a href="https://www.instagram.com/vedant_apple_store/"><i class="fab fa-instagram"></i></a></div>
+            <div><a
+                href="https://api.whatsapp.com/send?phone=919923088691&text=I%20am%20looking%20for%20exiting%20deals%20on%20whatsapp"><i
+                  class="fab fa-whatsapp"></i></a></div>
+            <div><a href="tel:+919923088691"><i class="fas fa-phone"></i></a></div>
+            <div><a href="mailto:Vedantt890@gmail.com"><i class="fas fa-envelope"></i></a></div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    // JavaScript for toggle menu
+    document.getElementById('toggleMenu').addEventListener('click', function () {
+      document.getElementById('mobileMenu').style.right = '0'; // Slide in from the right
+    });
+
+    document.getElementById('closeMenu').addEventListener('click', function () {
+      document.getElementById('mobileMenu').style.right = '-100%'; // Slide out to the right
+    });
+  </script>
+
+
+  <header class="main-header">
+    <div class="header-left " style="background-color: none;">
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/download1.png" class="animate__animated animate__bounceInLeft " style="filter: invert(1); "
+            alt="Your Logo">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="header-right">
+      <div class="search-bar animate__animated animate__bounceInDown animate__delay-1s"
+        style="font-family: sans-serif;font-weight:200 ;">
+        <form action=" buddy.html" method="get" class="search-form">
+          <input type="hidden" name="post_type" value="product" />
+          <div class="search-bar">
+            <input type="text" name="s" id="searchInputDesktop" class="slide-search astra-search-icon"
+              placeholder="Search for iPhones, iPad & More.." />
+            <i id="searchIcon" class="fa fa-search search-icon"></i>
+          </div>
+          <div class="clearInput">
+            <i class="fa fa-times close-icon"></i>
+          </div>
+        </form>
+      </div>
+      <a href="buddy/index.html@p=41"
+        class="my-account animate__animated animate__bounceInRight animate__animated animate__pulse__infinite">Visit
+        Us</a>
+    </div>
+
+  </header>
+
+  <div class="bottom-header" style="font-family: sans-serif; font-weight: 500;color: 
+rgb(75, 85, 99);">
+
+    <a href="buddy/product-category/ipad/index.html">iPad</a>
+    <a href="buddy/product-category/iphone/index.html">iPhone</a>
+    <a href="buddy/product-category/macbook/index.html">MacBook</a>
+    <a href="buddy/product-category/applewatch/index.html">Apple Watch</a>
+    <a href="buddy/product-category/airpods/index.html">Airpods</a>
+    <a href="buddy/product-category/accessories/page/1/index.html">Accessories</a>
+
+
+    <a href="https://maps.app.goo.gl/URTsfduTjyGAx5Yq7"><i class="fas fa-map-marker-alt"></i> Vedant Store</a>
+  </div>
+
+
+  <!-- Snow Fall Script 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const snowflakeCount = 50; // Adjust the number of snowflakes
+      const body = document.body;
+
+      // Check screen width for mobile
+      const isMobile = window.innerWidth <= 768;
+      const minFontSize = isMobile ? 5 : 10; // Smaller font size on mobile
+      const maxFontSize = isMobile ? 10 : 20; // Adjusted range for mobile
+
+      for (let i = 0; i < snowflakeCount; i++) {
+          const snowflake = document.createElement("div");
+          snowflake.classList.add("snowflake");
+          snowflake.innerHTML = "❄"; // Snowflake character
+          snowflake.style.setProperty("--random-offset", Math.random()); // Random offset for horizontal movement
+          snowflake.style.left = Math.random() * 100 + "vw"; // Random starting position
+          snowflake.style.animationDuration = Math.random() * 5 + 5 + "s"; // Duration: 5-10 seconds
+          snowflake.style.fontSize = Math.random() * (maxFontSize - minFontSize) + minFontSize + "px"; // Dynamically set font size
+          snowflake.style.animationDelay = Math.random() * 5 + "s"; // Staggered starts
+          body.appendChild(snowflake);
+
+          // Remove snowflake after animation ends
+          snowflake.addEventListener("animationend", () => snowflake.remove());
+      }
+  });
+</script> -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const submenu = document.querySelector('.submenu');
+      const submenuContent = document.querySelector('.submenu-content');
+
+      submenu.addEventListener('mouseover', () => {
+        if (window.innerWidth >= 768) {
+          submenuContent.style.display = 'block';
+          const rect = submenuContent.getBoundingClientRect();
+          if (rect.right > window.innerWidth) {
+            submenuContent.style.left = `-${rect.right - window.innerWidth + 20}px`;
+          } else {
+            submenuContent.style.left = '0';
+          }
+        }
+      });
+
+      submenu.addEventListener('mouseout', () => {
+        if (window.innerWidth >= 768) {
+          submenuContent.style.display = 'none';
+          submenuContent.style.left = '';
+        }
+      });
+    });
+
+  </script>
+
+  <script>
+    // Get references to the mobile and desktop search inputs and search forms
+    const searchInputMobile = document.getElementById('searchInputMob');
+    const searchFormMobile = document.querySelector('.black-header .search-form');
+    const searchInputDesktop = document.getElementById('searchInputDesktop');
+    const searchFormDesktop = document.querySelector('.main-header .search-form');
+    const searchIconMobile = document.querySelector('.black-header .search-icon');
+    const searchIconDesktop = document.querySelector('.main-header .search-icon');
+
+    // Function to perform the search
+    function performSearch(searchInput, searchForm) {
+      // Check if the search input is not empty
+      if (searchInput.value.trim() !== '') {
+        // Submit the search form
+        searchForm.submit();
+      }
+    }
+
+    // Listen for the "Enter" key press in both mobile and desktop search inputs
+    searchInputMobile.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        // Prevent the default form submission
+        event.preventDefault();
+        // Perform the search for mobile
+        performSearch(searchInputMobile, searchFormMobile);
+      }
+    });
+
+    searchInputDesktop.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        // Prevent the default form submission
+        event.preventDefault();
+        // Perform the search for desktop
+        performSearch(searchInputDesktop, searchFormDesktop);
+      }
+    });
+
+    // Listen for clicks on the search icons for mobile and desktop
+    searchIconMobile.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor tag
+      // Perform the search for mobile
+      performSearch(searchInputMobile, searchFormMobile);
+    });
+
+    searchIconDesktop.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor tag
+      // Perform the search for desktop
+      performSearch(searchInputDesktop, searchFormDesktop);
+    });
+  </script>
+
+
+  <div class="slider-cb">
+    <div class="slides-cb animate__animated animate__fadeIn  animate__slower">
+      <!-- Desktop Slides -->
+      <div class="slide-cb desktop"><img src="imgs/Cover (1).png"></div>
+      <div class="slide-cb desktop"><img src="imgs/Cover.png"></div>
+
+      <div class="slide-cb desktop"><img src="imgs/pro_endframe__e2wscfy18pme_large.jpg"></div>
+      <div class="slide-cb desktop"><img src="imgs/ipad.png"></div>
+
+
+      <!-- Mobile and Tablet Slides -->
+      <div class="slide-cb mobile-tablet"><img src="imgs/Cover (1).png"></div>
+      <div class="slide-cb mobile-tablet"><img src="imgs/Cover.png"></div>
+      <div class="slide-cb mobile-tablet"><img src="imgs/pro_endframe__e2wscfy18pme_large.jpg"></div>
+      <div class="slide-cb mobile-tablet"><img src="imgs/ipad.png"></div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-cb">
+      <button class="prev-cb">&#10094;</button>
+      <button class="next-cb">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide-cb');
+    const slidesVisible = Array.from(slides).filter(slide => window.getComputedStyle(slide).display !== 'none');
+    const totalSlides = slidesVisible.length;
+    const slideInterval = 3000; // Change slide every 3 seconds
+
+    function showSlide(n) {
+      if (n >= totalSlides) index = 0;
+      if (n < 0) index = totalSlides - 1;
+
+      const offset = index * 100;
+      document.querySelector('.slides-cb').style.transform = `translateX(-${offset}%)`;
+    }
+
+    function nextSlide() {
+      index++;
+      showSlide(index);
+    }
+
+    function prevSlide() {
+      index--;
+      showSlide(index);
+    }
+
+    document.querySelector('.prev-cb').addEventListener('click', () => {
+      prevSlide();
+    });
+
+    document.querySelector('.next-cb').addEventListener('click', () => {
+      nextSlide();
+    });
+
+    // Initialize
+    showSlide(index);
+
+    // Autoplay functionality
+    setInterval(nextSlide, slideInterval);
+
+  </script>
+
+
+
+  <section class="banner-section " style="background-color: black;">
+    <img src="imgs/unnamed.jpg" class="animate__animated animate__fadeIn animate__slower  " style="
+    --animate-duration: 3s; 
+    animation-timing-function: ease-out !important;
+  "> alt="New Banner Image">
+    <!-- <img src="imgs/unnamed.jpg" class="animate__animated animate__pulse animate__infinite " alt="New Banner Image"> -->
+  </section>
+
+  <!-- WhatsApp Us -->
+  <div class="responsive-buttons">
+    <div class="section-title-wa">
+      <h2 class="title">To Know more, WhatsApp Us!</h2>
+    </div>
+    <marquee>
+      <p>Click On Any Of the Whatsapp Button For One to One Interaction On Products and Prices.</p>
+    </marquee>
+
+    <div class="button-section">
+
+      <div class="wa-card ">
+        <a href="https://wa.me/9923088691?text=I%20am%20looking%20for%20assistance" style="color: #FFFFFF;"
+          class="btns btn-medium-screen animate__animated animate__pulse animate__infinite"><i
+            class="fab fa-whatsapp"></i>WhatsApp Us</a>
+        <div class="text">Looking for assistance ?</div>
+      </div>
+
+      <div class="wa-card">
+        <a href="https://wa.me/9923088691?text=I%20am%20looking%20for%20Exciting%20deals" style="color: #FFFFFF;"
+          class="btns btn-medium-screen animate__animated animate__pulse animate__infinite"><i
+            class="fab fa-whatsapp"></i>WhatsApp Us</a>
+        <div class="text">Want Exciting Deals?</div>
+      </div>
+
+      <div class="wa-card">
+        <a href="https://wa.me/9923088691?text=I%20am%20looking%20for%20Offers" style="color: #FFFFFF;"
+          class="btns btn-medium-screen animate__animated animate__pulse animate__infinite"><i class="fab fa-whatsapp">
+          </i>WhatsApp Us</a>
+        <div class="text">Looking for offers?</div>
+      </div>
+
+      <div class="wa-card">
+        <a href="https://wa.me/9923088691?text=I%20am%20looking%20for%20Offers%20on%20latest%20launches"
+          style="color: #FFFFFF;" class="btns btn-medium-screen animate__animated animate__pulse animate__infinite"><i
+            class="fab fa-whatsapp"></i>WhatsApp Us</a>
+        <div class="text">Offers on Latest Launch</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /WhatsApp Us -->
+
+
+  <!-- New image section with 8 images and names -->
+  <section class="new-image-section" id="new-image-section" >
+    <h2 class="new-image-section-heading">Our Categories</h2>
+    <div class="new-image-container "style="background-color: #F4F7FA; padding: 15px; border-radius: 10px;">
+      <div class="new-image-item ">
+        <a href="buddy/product-category/iphone/index.html"><img src="imgs/iphoneeeeeeeeeeeeee.png" alt="iPhones"></a>
+        <p>iPhones</p>
+      </div>
+      <div class="new-image-item">
+        <a href="buddy/product-category/ipad/index.html"><img src="imgs/ipadd.png" alt="iPads"></a>
+        <p>iPads</p>
+      </div>
+      <div class="new-image-item">
+        <a href="buddy/product-category/applewatch/index.html"><img src="imgs/iwatch.png" alt="Apple Watch"></a>
+        <p>Apple Watch</p>
+      </div>
+      <div class="new-image-item">
+        <a href="buddy/product-category/airpods/index.html"><img src="imgs/air.png" alt="AirPods"></a>
+        <p>Airpods</p>
+      </div>
+      <div class="new-image-item">
+        <a href="buddy/product-category/macbook/index.html"><img src="imgs/macbook.png" alt="MacBook"></a>
+        <p>MacBook</p>
+      </div>
+      <div class="new-image-item">
+        <a href="buddy/product-category/accessories/page/1/index.html"><img src="imgs/access.png" alt="Accessories"></a>
+        <p>Accessories</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.swiper-container', {
+        loop: true, // Enable looping
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 3000, // Auto slide every 3 seconds
+          disableOnInteraction: false, // Continue autoplay after user interaction
+        },
+        touchEventsTarget: 'container', // Enable touch drag
+      });
+    });
+  </script>
+
+  <!-- Product Slider JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const products = document.querySelectorAll(".product");
+
+      products.forEach(product => {
+        const mrp = parseFloat(product.querySelector(".mrp").textContent.replace('₹', '').replace(',', ''));
+        const salePrice = parseFloat(product.querySelector(".sale-price").textContent.replace('₹', '').replace(',', ''));
+
+        if (mrp && salePrice && mrp > salePrice) {
+          const percentageOff = Math.round(((mrp - salePrice) / mrp) * 100);
+          const badge = product.querySelector(".discount-badge");
+          badge.textContent = `-${percentageOff}%`;
+        }
+      });
+    });
+
+  </script>
+
+
+  <!-- Product Slider section -->
+  <section class="product-slider" id="productSlider">
+    <h2 class="section-heading">Best Selling Products</h2>
+    <div class="product-carousel">
+      <!-- Product 1 -->
+      <div class="product">
+        <a href="buddy/index.html@p=4375" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/product1.jpg" alt="Apple iPhone 8">
+          <div class="product-info">
+            <h3 class="product-title">Apple iPhone 8</h3>
+            <div class="product-rating" data-rating="4.1"></div>
+            <p class="product-price">
+              <span class="mrp">₹28900.00</span>
+              <span class="sale-price">₹9,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <a href="buddy/index.html@p=4317" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/12-pink.jpg" alt="Apple iPhone 12">
+          <div class="product-info">
+            <h3 class="product-title">Apple iPhone 12</h3>
+            <div class="product-rating" data-rating="4.8"></div>
+            <p class="product-price">
+              <span class="mrp">₹79,900.00</span>
+              <span class="sale-price">₹24,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <a href="buddy/index.html@p=4509" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/13-blue.jpg" alt="Apple iPhone 13">
+          <div class="product-info">
+            <h3 class="product-title">Apple iPhone 13</h3>
+            <div class="product-rating" data-rating="4.2"></div>
+            <p class="product-price">
+              <span class="mrp">₹69,900.00</span>
+              <span class="sale-price">₹35,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <a href="https://cellbuddy.in/buddy/store/apple-watch-series-7-gps-cellular/" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/Series-7.jpg" alt="Apple Watch Series 7">
+          <div class="product-info">
+            <h3 class="product-title">Apple Watch Series 7</h3>
+            <div class="product-rating" data-rating="4.6"></div>
+            <p class="product-price">
+              <span class="mrp">₹59,000.00</span>
+              <span class="sale-price">₹26,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <a href="buddy/index.html@p=4085" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/airpodspro.jpg" alt="Apple Airpods Pro">
+          <div class="product-info">
+            <h3 class="product-title">Apple Airpods Pro</h3>
+            <div class="product-rating" data-rating="4.9"></div>
+            <p class="product-price">
+              <span class="mrp">₹24,900.00</span>
+              <span class="sale-price">₹9,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.product-rating').forEach(function (rating) {
+        const ratingValue = parseFloat(rating.getAttribute('data-rating'));
+        const stars = Math.floor(ratingValue);
+        const halfStar = ratingValue % 1 !== 0;
+
+        // Add filled stars
+        for (let i = 0; i < stars; i++) {
+          rating.innerHTML += '<span class="star star-filled">&#9733;</span>';
+        }
+
+        // Add half star if needed
+        if (halfStar) {
+          rating.innerHTML += '<span class="star star-half">&#9733;</span>';
+        }
+
+
+      });
+    });
+  </script>
+
+
+
+  <!-- <section class="hot-deals-section">
+    <h2 class="section-heading">Hot Deals</h2>
+    <div class="hot-deals-container">
+      <div class="hot-deal">
+        <a href="buddy/product-category/iphone/index.html">
+          <img src="imgs/hotdeal1.jpg" alt="Hot Deal 1">
+        </a>
+      </div>
+      <div class="hot-deal">
+        <a href="buddy/product-category/ipad/index.html">
+          <img src="imgs/hotdeal2.jpg" alt="Hot Deal 2">
+        </a>
+      </div>
+      <div class="hot-deal">
+        <a href="buddy/product-category/applewatch/index.html@orderby=price">
+          <img src="imgs/hotdeal3.jpg" alt="Hot Deal 3">
+        </a>
+      </div>
+      <div class="hot-deal">
+        <a href="buddy/store/page/1/index.html@orderby=price">
+          <img src="imgs/hotdeal4.jpg" alt="Hot Deal 4">
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="media-coverage-section">
+    <h2 class="section-title">Media Coverage</h2>
+    <div class="media-slider">
+
+      <div class="media-slide">
+        <a href="https://www.dnaindia.com/mobile/report-steve-on-mega-cellbuddy-digital-transformation-a-blueprint-for-success-3111216"
+          target="_blank">
+          <img src="imgs/media1.png" alt="DNA Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://news.abplive.com/brand-wire/sam-discusses-the-future-of-mega-cellbuddy-a-vision-of-innovation-and-expansion-1721587"
+          target="_blank">
+          <img src="imgs/media2.png" alt="ABP Live Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://cellbuddy.in/Deccan%20herald%C3%A2%E2%82%AC%E2%80%9Dhttps://www.deccanherald.com/brandspot/featured/sam-speaks-on-mega-cellbuddys-success-a-digital-revolution-in-mobile-retail-3214866"
+          target="_blank">
+          <img src="imgs/media3.png" alt="Deccan herald Media Coverage ">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://www.monsoon-sale-world.com/initiatives/innovating-social-responsibility-the-journey-of-cell-buddy-foundation"
+          target="_blank">
+          <img src="imgs/media4.png" alt="monsoon-sale- Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://www.oneindia.com/partner-content/cell-buddy-foundation-empowering-communities-through-technology-and-compassion-3949103.html"
+          target="_blank">
+          <img src="imgs/media5.png" alt="OneIndia Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://www.freepressjournal.in/amp/latest-news/cell-buddy-foundation-bridging-gaps-building-futures"
+          target="_blank">
+          <img src="imgs/media6.png" alt="Free Press Journal Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://cellbuddy.in/Lokmat%20Times%C3%A2%E2%82%AC%E2%80%9Dhttps://www.lokmattimes.com/business/mega-cellbuddy-a-mobile-retail-powerhouse-thriving-with-customers-and-orders-across-india-a475/"
+          target="_blank">
+          <img src="imgs/media7.png" alt="Lokmat Times Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://www.apnnews.com/mega-cellbuddy-from-busy-stores-to-nationwide-orders-a-mobile-retail-success-story/"
+          target="_blank">
+          <img src="imgs/media8.png" alt="ABP News Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://www.outlookindia.com/hub4business/mega-cellbuddys-evolution-from-a-legacy-mobile-retailer-to-a-digital-powerhouse"
+          target="_blank">
+          <img src="imgs/media9.png" alt="Out Look Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://english.newstracklive.com/news/mega-cellbuddy-a-nationwide-sensation-with-overwhelming-customer-demand-sc14-nu318-ta318-1328500-1.html"
+          target="_blank">
+          <img src="imgs/media10.png" alt="News Track Live Media Coverage ">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://www.mid-day.com/amp/buzz/article/how-mega-cellbuddy-embraced-digital-transformation-for-nationwide-success-2406"
+          target="_blank">
+          <img src="imgs/media11.png" alt="Mid-day Media Coverage">
+        </a>
+      </div>
+
+      <div class="media-slide">
+        <a href="https://www.ahmedabadmirror.com/mega-cellbuddys-digital-transformation-pioneering-mobile-retail-in-the-modern-age/81876537.html"
+          target="_blank">
+          <img src="imgs/media12.png" alt="Ahmedabad Mirro Media Coverage">
+        </a>
+      </div>
+
+    </div>
+  </section> -->
+
+  <script>
+    $(document).ready(function () {
+      $('.media-slider').slick({
+        dots: true, // Add navigation dots
+        arrows: true, // Add navigation arrows
+        slidesToShow: 4, // Number of images to show in the slider
+        slidesToScroll: 1, // Number of images to scroll at a time
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Set autoplay speed in milliseconds (adjust as needed)
+        responsive: [
+          {
+            breakpoint: 1024, // Adjusts for larger tablets/smaller desktops
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 768, // Tablet breakpoint
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480, // Mobile breakpoint
+            settings: {
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+  <!-- Product Slider section -->
+  <section class="product-slider" id="productSlider">
+    <h2 class="section-heading">Exclusive Deals</h2>
+    <div class="product-carousel">
+      <!-- Product 1 -->
+      <div class="product">
+        <a href="buddy/index.html@p=4820" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/14promax.jpg" alt="Apple iPhone 14 Pro Max">
+          <div class="product-info">
+            <h3 class="product-title">Apple iPhone 14 Pro Max</h3>
+            <div class="product-rating" data-rating="5"></div>
+            <p class="product-price">
+              <span class="mrp">₹139,900.00</span>
+              <span class="sale-price">₹74,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <a href="buddy/index.html@p=63291" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/15promax.jpg" alt="Apple iPhone 15 Pro Max">
+          <div class="product-info">
+            <h3 class="product-title">Apple iPhone 15 Pro Max</h3>
+            <div class="product-rating" data-rating="4.9"></div>
+            <p class="product-price">
+              <span class="mrp">₹179,900.00</span>
+              <span class="sale-price">₹94,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <a href="buddy/index.html@p=80" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/13promax.jpg" alt="Apple iPhone 13 Pro Max">
+          <div class="product-info">
+            <h3 class="product-title">Apple iPhone 13 Pro Max</h3>
+            <div class="product-rating" data-rating="4.7"></div>
+            <p class="product-price">
+              <span class="mrp">₹129,900.00</span>
+              <span class="sale-price">₹56,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <a href="buddy/index.html@p=36755" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/watchultra.jpg" alt="Apple Watch Ultra [GPS + Cellular]">
+          <div class="product-info">
+            <h3 class="product-title">Apple Watch Ultra (GPS + Cellular)</h3>
+            <div class="product-rating" data-rating="5"></div>
+            <p class="product-price">
+              <span class="mrp">₹89,900.00</span>
+              <span class="sale-price">₹64,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <a href="buddy/index.html@p=6782" class="product-link">
+          <div class="discount-badge"></div>
+          <img src="imgs/airpodspro2.jpg" alt="Apple AirPods Pro (2nd Gen)">
+          <div class="product-info">
+            <h3 class="product-title">Apple AirPods Pro (2nd Gen)</h3>
+            <div class="product-rating" data-rating="4.8"></div>
+            <p class="product-price">
+              <span class="mrp">₹26,900.00</span>
+              <span class="sale-price">₹15,999.00</span>
+            </p>
+          </div>
+        </a>
+      </div>
+  </section>
+
+
+  <!-- Add these scripts before </body> -->
+  <script>
+    // Initialize Slick Carousel for the product slider
+    $(document).ready(function () {
+      $('.product-carousel').slick({
+        slidesToShow: 4, // Number of slides to show at a time
+        slidesToScroll: 1, // Number of slides to scroll at a time
+        autoplay: true, // Auto slide
+        autoplaySpeed: 2000, // Auto slide every 3 seconds
+        prevArrow: '<button type="button" class="slick-prev">&#9665;</button>',
+        nextArrow: '<button type="button" class="slick-next">&#9655;</button>',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+
+
+  <!-- Black Background Section with 2 Columns -->
+  <section class="custom-black-section">
+    <div class="custom-left-column">
+      <h2 class="custom-big-heading">Vedant Store is trusted by 2 Million + Happy Customers and Major Brands since 2022</h2>
+    </div>
+    <div class="custom-right-column">
+      <!-- Star Icon Box -->
+      <div class="custom-icon-box">
+        <i class="fas fa-star"></i>
+        <p>4.5 Star Rating</p>
+      </div>
+      <!-- Customer Icon Box -->
+      <div class="custom-icon-box">
+        <i class="fas fa-smile"></i>
+        <p>2 Million+ Happy Customers</p>
+      </div>
+      <!-- Thumbs-up Icon Box (Suggestion) -->
+      <div class="custom-icon-box">
+        <i class="fas fa-thumbs-up"></i>
+        <p>Satisfied Customers</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="custom-image-slider-section">
+    <div class="custom-image-slider">
+
+      <div class="custom-image-slide">
+        <img src="imgs/" alt="Review 1">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/" alt="Review 2">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/" alt="Review 3">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/" alt="Review 4">
+      </div>
+
+      <!-- <div class="custom-image-slide">
+        <img src="imgs/review5.jpg" alt="Review 5">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/review6.jpg" alt="Review 6">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/review7.jpg" alt="Review 7">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/review8.jpg" alt="Review 8">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/review9.jpg" alt="Review 9">
+      </div>
+
+      <div class="custom-image-slide">
+        <img src="imgs/review10.jpg" alt="Review 10">
+      </div> -->
+
+    </div>
+
+    <div class="show-more-button animate__animated animate__pulse animate__infinite">
+      <a href="buddy/index.html@p=112232" class="show-more-btn">Show More</a>
+    </div>
+
+  </section>
+
+  <script>
+    $(document).ready(function () {
+      $('.custom-image-slider').slick({
+        dots: true, // Add navigation dots
+        arrows: true, // Add navigation arrows
+        slidesToShow: 4, // Number of images to show in the slider
+        slidesToScroll: 1, // Number of images to scroll at a time
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Set autoplay speed in milliseconds (adjust as needed)
+        appendArrows: '.custom-image-slider-section', // Append arrows to the section
+        appendDots: '.custom-image-slider-section', // Append dots to the section
+        responsive: [
+          {
+            breakpoint: 1024, // Adjusts for larger tablets/smaller desktops
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 768, // Tablet breakpoint
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480, // Mobile breakpoint
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+
+  <section class="faq-section">
+    <h1 class="faq-title">Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <h2>What is open box product?</h2>
+        <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="faq-answer">
+        <p>An open box product refers to an item that was returned by a customer, inspected for quality, and deemed fit
+          for resale by the retailer or manufacturer. These products are typically unused or lightly used, come in their
+          original packaging, and are sold at a discounted price compared to brand new items.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <h2>What is the return policy?</h2>
+        <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="faq-answer">
+        <p>Our return policy allows you to return products within 7 days of purchase for a full refund or exchange,
+          provided the item is in its original condition and packaging. Please refer to our detailed return policy page
+          for specific terms and conditions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <h2>Do you have delivery in all places or only in particular locations?</h2>
+        <button class="toggle-btn"><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="faq-answer">
+        <p>We offer delivery services across India, ensuring that our products reach customers in a timely manner.
+          However, delivery availability may vary for remote or specific locations. Please contact our customer service
+          for more information on delivery to your area.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    // JavaScript for toggling answer visibility
+    function toggleAnswer(element) {
+      const faqItem = element.closest(".faq-item");
+      const faqAnswer = faqItem.querySelector(".faq-answer");
+      const toggleBtn = faqItem.querySelector(".toggle-btn");
+
+      // Close all other open FAQ answers
+      const allFaqItems = document.querySelectorAll('.faq-item');
+      allFaqItems.forEach(item => {
+        const answer = item.querySelector('.faq-answer');
+        const btn = item.querySelector('.toggle-btn');
+
+        if (item !== faqItem && answer.classList.contains('active')) {
+          answer.classList.remove('active');
+          answer.style.maxHeight = "0";
+          btn.innerHTML = '<i class="fas fa-plus"></i>';
+        }
+      });
+
+      // Toggle the selected FAQ answer
+      faqAnswer.classList.toggle("active");
+
+      if (faqAnswer.classList.contains("active")) {
+        faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
+        toggleBtn.innerHTML = '<i class="fas fa-minus"></i>';
+      } else {
+        faqAnswer.style.maxHeight = "0";
+        toggleBtn.innerHTML = '<i class="fas fa-plus"></i>';
+      }
+    }
+  </script>
+
+  <!-- Full-width banner section -->
+  <!-- <section class="full-width-banner">
+    <img src="imgs/Gemini_Generated_Image_7vfumr7vfumr7vfu.png" alt="Banner Image">
+  </section> -->
+
+  <!-- WhatsApp Us -->
+  <!-- <div class="responsive-buttons">
+    <div class="section-title-wa">
+      <h2 class="title">To Know more, WhatsApp Us!</h2>
+    </div>
+    <marquee>
+      <p>Click On Any Of the Whatsapp Button For One to One Interaction On Products and Prices.</p>
+    </marquee>
+
+    <div class="button-section">
+
+      <div class="wa-card">
+        <a href="https://wa.me/9923088691?text=I%20am%20looking%20for%20assistance" style="color: #FFFFFF;"
+          class="btns btn-medium-screen"><i class="fab fa-whatsapp"></i>WhatsApp Us</a>
+        <div class="text">Looking for assistance ?</div>
+      </div>
+
+      <div class="wa-card">
+        <a href="https://wa.me/9923088691?text=I%20am%20looking%20for%20Exciting%20deals" style="color: #FFFFFF;"
+          class="btns btn-medium-screen"><i class="fab fa-whatsapp"></i>WhatsApp Us</a>
+        <div class="text">Want Exciting Deals?</div>
+      </div>
+
+      <div class="wa-card">
+        <a href="https://wa.me/9923088691?text=I%20am%20looking%20for%20Offers" style="color: #FFFFFF;"
+          class="btns btn-medium-screen"><i class="fab fa-whatsapp"> </i>WhatsApp Us</a>
+        <div class="text">Looking for offers?</div>
+      </div>
+
+      <div class="wa-card">
+        <a href="https://wa.me/8097868000?text=I%20am%20looking%20for%20Offers%20on%20latest%20launches"
+          style="color: #FFFFFF;" class="btns btn-medium-screen"><i class="fab fa-whatsapp"></i>WhatsApp Us</a>
+        <div class="text">Offers on Latest Launch</div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- /WhatsApp Us -->
+
+  <section class="four-column-section">
+    <div class="column-4 animate__animated animate__pulse animate__infinite animate__slower animate__delay-3s ">
+      <div class="column-content-4 ">
+        <i class="icon"><i class="fas fa-shipping-fast"></i></i>
+        <div class="text-content">
+          <h3>COD Available</h3>
+          <p style="padding: 0;">Pay with Cash on Delivery</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-4 ">
+      <div class="column-content-4">
+        <i class="icon"><i class="fas fa-lock"></i></i>
+        <div class="text-content">
+          <h3>Secure Payments</h3>
+          <p style="padding: 0;">Your transactions are safe</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="column-4">
+      <div class="column-content-4">
+        <i class="icon"><i class="far fa-calendar-alt"></i></i>
+        <div class="text-content">
+          <h3>Easy EMI</h3>
+          <p style="padding: 0;">Starts From ₹1500</p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="column-4">
+      <div class="column-content-4">
+        <i class="icon"><i class="fas fa-headset"></i></i>
+        <div class="text-content">
+          <h3>24/7 Support</h3>
+          <p style="padding: 0;">Get assistance anytime</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="footer-columns">
+
+      <!-- 1st Column -->
+      <div class="footer-column">
+        <h4>Vedant Store</h4>
+        <p class="para-footer">Vedant Store, run by Vedant Thakre, is an  Apple products reseller
+          offering a wide range of iPhones, iPads, MacBooks, and accessories with delivery available all over India. The
+          store highlights both brand-new and sealed-pack devices as well as second-hand and open-box Apple products at
+          attractive prices, with Cash on Delivery (COD) available for customers nationwide. 
+          Vedant  Store positions itself as a reliable, customer-friendly platform for affordable Apple devices,
+          inviting users to directly visit us for deals, conditions, and availability.</p>
+      </div>
+
+      <!-- 2nd Column -->
+      <div class="footer-column category-column">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="buddy/product-category/iphone/index.html">iPhone</a></li>
+          <li><a href="buddy/product-category/ipad/index.html">iPad</a></li>
+          <li><a href="buddy/product-category/applewatch/index.html">Apple Watch</a></li>
+          <li><a href="buddy/product-category/airpods/index.html">Airpods</a></li>
+          <li><a href="buddy/product-category/macbook/index.html">MacBook</a></li>
+          <li><a href="buddy/product-category/accessories/page/1/index.html">Accessories</a></li>
+        </ul>
+      </div>
+
+      <!-- 3rd Column -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buddy/store/index.html">Shop</a></li>
+          <li><a href="buddy/index.html@p=43">About Us</a></li>
+          <li><a href="buddy/index.html@p=414">Contact Us</a></li>
+          <li><a href="buddy/index.html@p=41">My Account</a></li>
+          <li><a href="https://maps.app.goo.gl/URTsfduTjyGAx5Yq7">Locate Us <i class="fas fa-map-marker-alt"></i> </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 4th Column -->
+      <div class="footer-column">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="buddy/index.html@p=116698">Shipping & Delivery</a></li>
+          <li><a href="buddy/index.html@p=9921">Terms & Conditions</a></li>
+          <li><a href="buddy/index.html@p=116696">Cancellation and Refund</a></li>
+          <li><a href="buddy/index.html@p=3">Privacy Policy</a></li>
+        </ul>
+
+        <!-- Follow Us Section with Social Icons -->
+        <div class="footer-follow-us ">
+          <h4  >Follow Us</h4>
+          <ul class="footer-social-icons">
+            <li><a href="https://www.instagram.com/vedant_apple_store/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="index.html#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="index.html#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="index.html#"><i class="fab fa-snapchat"></i></a></li>
+            <li><a href="index.html#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Copyright Section -->
+  <div class="copyright-section">
+    <div class="copyright-left">
+      <p>
+        &copy; <span id="currentYear"></span> Vedant Store 
+        <a href="" style="color:#ffffff; text-decoration: none;" rel="noopener noreferrer"
+          target="_blank" 
+          aria-label="Visit CrazzyCodes website">
+       
+        </a>
+      </p>
+    </div>
+
+    <div class="copyright-right">
+      <a href="tel:+919923088691"><i class="fas fa-phone-alt"></i></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=919923088691&text=I%20am%20looking%20for%20exiting%20deals%20on%20whatsapp"><i
+          class="fab fa-whatsapp"></i></a>
+      <a href="mailto:Vedantt890@gmail.com?subject=Hello&body=Hi%20there!"><i class="fas fa-envelope"></i></a>
+      <a
+        href=""><i
+          class="fas fa-map-marker-alt"></i></a>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    // JavaScript for updating the current year
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    });
+  </script>
+
+  <!-- Add these scripts before </body> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>
